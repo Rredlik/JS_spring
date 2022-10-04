@@ -1,7 +1,6 @@
 package org.example.app.services;
 
 import org.apache.logging.log4j.Logger;
-import org.apache.log4j.Logger;
 import org.example.web.dto.Book;
 import org.springframework.stereotype.Repository;
 
