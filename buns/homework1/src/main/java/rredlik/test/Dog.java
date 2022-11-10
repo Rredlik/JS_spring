@@ -6,7 +6,7 @@ public class Dog implements Pet {
     private int age;
 
     public void init(){
-        System.out.println("Create Dog obj");
+        System.out.println("Create Dog obj (test 1)");
     }
 
     public Dog(){}

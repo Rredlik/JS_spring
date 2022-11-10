@@ -14,7 +14,7 @@ public class Dog implements Pet {
 
     @PostConstruct
     public void init(){
-        System.out.println("Create Dog obj");
+        System.out.println("Create Dog obj (test 2)");
     }
 
     public Dog(){}
@@ -36,6 +36,6 @@ public class Dog implements Pet {
     }
 
     public String makeSound() {
-        return "gav-gav";
+        return "wof-wof";
     }
 }
