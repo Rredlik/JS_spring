@@ -4,9 +4,9 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 public class MyWevInitializer extends
         AbstractAnnotationConfigDispatcherServletInitializer {
-    @Override
+//    @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[0];
+        return null;
     }
 
     protected Class<?>[] getServletConfigClasses() {
