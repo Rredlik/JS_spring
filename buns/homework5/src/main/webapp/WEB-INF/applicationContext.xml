@@ -15,7 +15,7 @@
 		http://www.springframework.org/schema/tx
 		http://www.springframework.org/schema/tx/spring-tx.xsd
 		http://www.springframework.org/schema/aop
-		http://www.springframework.org/schema/tx/spring-aop.xsd">
+		http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <context:component-scan base-package="com.dostovalov.spring.mvc_hibernate_aop" />
 
@@ -31,7 +31,7 @@
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/my_db?useSSL=false" />
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/my_db?useSSL=false&amp;serverTimezone=UTC" />
         <property name="user" value="bestuser" />
         <property name="password" value="bestuser" />
     </bean>
@@ -54,6 +54,5 @@
     </bean>
 
     <tx:annotation-driven transaction-manager="transactionManager" />
-
 
 </beans>
